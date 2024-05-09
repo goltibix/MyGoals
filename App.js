@@ -16,6 +16,7 @@ export default function App() {
   function handleDeleteGoal(id){
     console.log('DELETE')
     const deleteGoal = goals.filter((goal) =>{return goal.key !== id} )
+    setGoals(deleteGoal)
   }
 
 
